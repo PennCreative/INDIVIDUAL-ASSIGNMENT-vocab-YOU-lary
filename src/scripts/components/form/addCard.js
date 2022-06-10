@@ -1,13 +1,13 @@
+// import clearDom from '../../helpers/clearDom';
 import renderToDom from '../../helpers/renderToDom';
-import clearDom from '../../helpers/clearDom';
 
 // Remember to put uid after the empty obj
 const addCardForm = (obj = {}) => {
-  clearDom();
+  // clearDom();
   const domString = `
-  <form id="${obj.firebaseKey ? `update-book--${obj.firebaseKey}` : 'submit-book'}" class="mb-4">
+  <form id="${obj.firebaseKey ? `update-card--${obj.firebaseKey}` : 'submit-card'}" class="mb-4">
       <div class="form-group">
-        <label for="title">Book Title</label>
+        <label for="card">Word</label>
         <input type="text" class="form-control" id="word" aria-describedby="word" placeholder="Enter Word" value="${obj.word || ''}" required>
       </div>
       <div class="form-group">
@@ -21,9 +21,9 @@ const addCardForm = (obj = {}) => {
     <option value="HTML">HTML</option>
     <option value="CSS">CSS</option>
     <option value="JS">JS</option>
-    <option value="JS">JS</option>
+    <option value="other">Other</option>
   </select>
-      <button type="submit" class="btn btn-primary">Submit Book
+      <button type="submit" class="btn btn-primary">Submit Card
       </button>
     </form>`;
 
