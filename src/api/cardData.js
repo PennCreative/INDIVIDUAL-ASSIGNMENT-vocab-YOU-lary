@@ -46,10 +46,55 @@ const updateCard = (cardObj) => new Promise((resolve, reject) => {
     .catch((error) => reject(error));
 });
 
+const htmlLang = (uid) => new Promise((resolve, reject) => {
+  getCards(uid)
+    .then((usersCards) => {
+      const htmlCards = usersCards.filter((card) => card.language === 'html');
+      resolve(htmlCards);
+    }).catch((error) => reject(error));
+});
+
+const cssLang = (uid) => new Promise((resolve, reject) => {
+  getCards(uid)
+    .then((usersCards) => {
+      const cssCards = usersCards.filter((card) => card.language === 'css');
+      resolve(cssCards);
+    }).catch((error) => reject(error));
+});
+
+const jsLang = (uid) => new Promise((resolve, reject) => {
+  getCards(uid)
+    .then((usersCards) => {
+      const jsCards = usersCards.filter((card) => card.language === 'js');
+      resolve(jsCards);
+    }).catch((error) => reject(error));
+});
+
+const reactLang = (uid) => new Promise((resolve, reject) => {
+  getCards(uid)
+    .then((usersCards) => {
+      const reactCards = usersCards.filter((card) => card.language === 'react');
+      resolve(reactCards);
+    }).catch((error) => reject(error));
+});
+
+const otherLang = (uid) => new Promise((resolve, reject) => {
+  getCards(uid)
+    .then((usersCards) => {
+      const otherCards = usersCards.filter((card) => card.language === 'other');
+      resolve(otherCards);
+    }).catch((error) => reject(error));
+});
+
 export {
   getCards,
   getSingleCard,
   createCard,
   deleteCard,
-  updateCard
+  updateCard,
+  htmlLang,
+  cssLang,
+  jsLang,
+  reactLang,
+  otherLang
 };

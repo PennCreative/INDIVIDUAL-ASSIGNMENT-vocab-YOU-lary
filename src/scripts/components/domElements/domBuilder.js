@@ -8,10 +8,8 @@ const domBuilder = () => {
   <div id="buttons"></div>
   </div>
   <div id="mainContainer" class="main">
-    <div id="filterButtons" class="btnGroup">
-    </div>
-    <div id="cardHolder">
-    </div>
+    <div id="filterButtons" class="btnGroup"></div>
+    <div id="cardHolder"></div>
   </div>
   `;
   renderToDom('#app', domString);

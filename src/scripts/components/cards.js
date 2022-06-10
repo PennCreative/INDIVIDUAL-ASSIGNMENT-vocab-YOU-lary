@@ -3,7 +3,7 @@ import clearDom from '../helpers/clearDom';
 
 const emptyCards = () => {
   const domString = '<h1>No Items</h1>';
-  renderToDom('#card', domString);
+  renderToDom('#cardHolder', domString);
 };
 
 const showCards = (array) => {
@@ -27,7 +27,6 @@ const showCards = (array) => {
     renderToDom('#cardHolder', domString);
   } else {
     emptyCards();
-    console.warn('Add Cards Now');
   }
 };
 export { emptyCards, showCards };
