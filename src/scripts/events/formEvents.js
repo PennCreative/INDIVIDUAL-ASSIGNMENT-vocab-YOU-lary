@@ -2,7 +2,7 @@ import { showCards } from '../components/cards';
 import { createCard, updateCard } from '../../api/cardData';
 
 const formEvents = (uid) => {
-  document.querySelector('#mainContainer').addEventListener('submit', (e) => {
+  document.querySelector('#main-container').addEventListener('submit', (e) => {
     e.preventDefault();
 
     if (e.target.includes('submit-card')) {
