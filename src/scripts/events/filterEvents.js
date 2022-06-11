@@ -1,4 +1,4 @@
-import showCards from '../components/cards';
+import { showCards } from '../components/cards';
 import {
   getCards,
   cssLang,
@@ -16,11 +16,11 @@ const filterButtonEvents = (uid) => {
     cssLang(uid).then((cardsArray) => showCards(cardsArray));
   });
 
-  document.querySelector('#javascript').addEventListener('click', () => {
+  document.querySelector('#js').addEventListener('click', () => {
     jsLang(uid).then((cardsArray) => showCards(cardsArray));
   });
 
-  document.querySelector('#javascript').addEventListener('click', () => {
+  document.querySelector('#other').addEventListener('click', () => {
     otherLang(uid).then((cardsArray) => showCards(cardsArray));
   });
 

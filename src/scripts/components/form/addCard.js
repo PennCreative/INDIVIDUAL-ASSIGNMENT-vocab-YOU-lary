@@ -23,7 +23,7 @@ const addCardForm = (obj = {}) => {
     <option value="JS">JS</option>
     <option value="other">Other</option>
   </select>
-      <button type="submit" class="btn btn-primary">Submit Card
+      <button type="submit" id="submit-card" class="btn btn-primary">Submit Card
       </button>
     </form>`;
 

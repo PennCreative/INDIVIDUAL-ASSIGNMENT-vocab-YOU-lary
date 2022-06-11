@@ -8,12 +8,16 @@ import { getCards } from '../../api/cardData';
 import { showCards } from '../components/cards';
 import formEvents from '../events/formEvents';
 import navbar from '../components/domElements/navbar';
+import filterButtonEvents from '../events/filterEvents';
+import navEvents from '../events/navEvents';
 
 const startApp = (user) => {
   domBuilder();
   logo();
   navbar();
   filterButtons();
+  filterButtonEvents(user.uid);
+  navEvents();
   addCardForm();
   logoutButton();
   domEvents(user.uid);

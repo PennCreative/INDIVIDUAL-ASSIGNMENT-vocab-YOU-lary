@@ -49,7 +49,7 @@ const updateCard = (cardObj) => new Promise((resolve, reject) => {
 const htmlLang = (uid) => new Promise((resolve, reject) => {
   getCards(uid)
     .then((usersCards) => {
-      const htmlCards = usersCards.filter((card) => card.language === 'html');
+      const htmlCards = usersCards.filter((card) => card.language.toLowerCase() === 'html');
       resolve(htmlCards);
     }).catch((error) => reject(error));
 });

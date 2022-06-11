@@ -3,7 +3,7 @@ import renderToDom from '../../helpers/renderToDom';
 const logo = () => {
   const domString = `
   <div id="leftPart" class="left">
-  <h1>Logo</h1>
+  <h1><em>vocab-</em><strong>YOU</strong><em>-lary</em></h1>
   <div id="createForm"></div>
   </div>
   `;
