@@ -1,6 +1,6 @@
 const clearDom = () => {
-  document.querySelector('#mainContainer').innerHTML = '';
-  document.querySelector('#cardHolder').innerHTML = '';
+  document.querySelector('#pageHeader').innerHTML = '';
+  document.querySelector('#main-container').innerHTML = '';
 };
 
 export default clearDom;
