@@ -5,6 +5,7 @@ const domBuilder = () => {
   <div id="pageHeader" class="head">
   <div id="logo"></div>
   <div id="formArea"></div>
+  <div id="navbar"></div>
   <div id="buttons"></div>
   </div>
   <div id="main-container" class="main">

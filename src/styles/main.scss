@@ -24,9 +24,23 @@ body {
 .main {
   display: flex;
   justify-content: center;
+  flex-flow: column nowrap;
 }
+#cardHolder{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+}
+.card{
+  width: 20rem;
+  display: flex;
+  margin: .5rem;
+}
+.card-body{
+  background: aliceblue;
+}
+
 .btnGroup {
-  width: 50vw;
   display: flex;
   padding: .5rem;
   justify-content: space-evenly;
